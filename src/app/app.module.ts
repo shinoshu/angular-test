@@ -19,11 +19,7 @@ import { MatCardModule } from '@angular/material/card';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavComponent,
-    FormComponent
-  ],
+  declarations: [AppComponent, NavComponent, FormComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -43,4 +39,4 @@ import { ReactiveFormsModule } from '@angular/forms';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
