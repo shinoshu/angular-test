@@ -8,9 +8,15 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "prettier": "run-p prettier:html prettier:ts",
     "prettier:html": "prettier --parser angular --write \"./**/*.component.html\"",
     "prettier:ts": "prettier --parser typescript --single-quote --write \"./**/*.ts\"",
     "stylelint": "stylelint --fix \"./**/*.scss\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "run-p prettier stylelint"
+    }
   },
   "private": true,
   "dependencies": {
